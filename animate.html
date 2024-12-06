@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Rotating Image</title>
+  <style>
+    *{
+        background-color: black;
+    }
+    /* Centering container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Image with self-rotation */
+    .spin-img {
+      width: 100px; /* Adjust the size of the image */
+      height: 100px;
+      animation: spinAnimation 10s linear infinite;
+    }
+
+    /* Keyframes for spinning in place */
+    @keyframes spinAnimation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="/img/first circle (2).png" alt="Spinning Image" class="spin-img">
+</div>
+
+</body>
+</html>
+
